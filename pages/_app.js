@@ -10,11 +10,7 @@ const AppContainer = styled.div`
 `;
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <AppContainer {...pageProps}>
-      <Component />
-    </AppContainer>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
