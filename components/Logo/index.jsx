@@ -13,7 +13,7 @@ const Logo = () => {
         src="/images/NewSkillsGoogle.png"
         alt="logo"
         width={500}
-        height={150}
+        height={175}
       />
     </LogoContainer>
   );
