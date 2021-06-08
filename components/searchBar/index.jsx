@@ -122,9 +122,9 @@ const SearchBar = (props) => {
   const inputRef = useRef();
   const [searchQuery, setSearchQuery] = useState("");
   const [isLoading, setLoading] = useState(false);
-  const [tvShows, setTvShows] = useState([]);
+  const [slides, setSlides] = useState([]);
 
-  const isEmpty = !tvShows || tvShows.length === 0;
+  const isEmpty = !slides || slides.length === 0;
 
   const onChangeHandler = (e) => {
     e.preventDefault();
@@ -140,7 +140,7 @@ const SearchBar = (props) => {
     setExpanded(false);
     setSearchQuery("");
     setLoading(false);
-    setTvShows([]);
+    setSlides([]);
     if (inputRef.current) inputRef.current.value = "";
   };
 
@@ -149,12 +149,12 @@ const SearchBar = (props) => {
   }, [isClickedOutside]);
 
   const prepareSearchQuery = (query) => {
-    const url = `http://api.tvmaze.com/search/shows?q=${query}`;
+    const url = `api/info`;
 
     return encodeURI(url);
   };
 
-  const searchTvShow = async () => {
+  const searchSlides = async () => {
     if (!searchQuery || searchQuery.trim() === "") return;
 
     setLoading(true);
@@ -166,13 +166,13 @@ const SearchBar = (props) => {
     });
 
     if (response) {
-      setTvShows(response.data);
+      setSlides(response.data);
     }
 
     setLoading(false);
   };
 
-  useDebounce(searchQuery, 500, searchTvShow);
+  useDebounce(searchQuery, 500, searchSlides);
 
   return (
     <SearchBarContainer
@@ -221,15 +221,11 @@ const SearchBar = (props) => {
           )}
           {!isLoading && !isEmpty && (
             <>
-              {tvShows.map(({ show }) => {
+              {slides.map(({ name, id, image }) => {
                 return (
-                  <Link href={`/slide/${show.id}`}>
+                  <Link href={`/slide/${id}`}>
                     <div>
-                      <Result
-                        key={show.id}
-                        thumbnailSrc={show.image && show.image.medium}
-                        name={show.name}
-                      />
+                      <Result key={id} thumbnailSrc={image} name={name} />
                     </div>
                   </Link>
                 );

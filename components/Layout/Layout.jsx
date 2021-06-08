@@ -1,4 +1,5 @@
 import Logo from "../Logo";
+import Head from "next/head";
 import SearchBar from "../searchBar";
 import styled from "styled-components";
 import Footer from "../Footer";
@@ -16,6 +17,10 @@ const AppContainer = styled.div`
 const Layout = ({ children }) => {
   return (
     <AppContainer>
+      <Head>
+        <title>NewSkills</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Logo />
       <SearchBar />
       {children}

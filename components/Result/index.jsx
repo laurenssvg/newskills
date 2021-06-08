@@ -30,7 +30,7 @@ const Name = styled.h3`
   font-size: 15px;
   color: black;
   margin-left: 9px;
-  flex: 2;
+  flex: 1;
   display: flex;
 `;
 
