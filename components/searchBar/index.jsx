@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 import { IoClose, IoSearch } from "react-icons/io5";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import MoonLoader from "react-spinners/MoonLoader";
 import { useClickOutside } from "react-click-outside-hook";
 import useDebounce from "../../hooks/debounceHook";
 import axios from "axios";
-import TvShow from "../tvShow";
+import Result from "../Result";
 
 const SearchBarContainer = styled(motion.div)`
   display: flex;
@@ -215,19 +216,22 @@ const SearchBar = (props) => {
           )}
           {!isLoading && isEmpty && (
             <LoadingWrapper>
-              <WarningMessage>Nothing found!</WarningMessage>
+              <WarningMessage>Niks gevonden!</WarningMessage>
             </LoadingWrapper>
           )}
           {!isLoading && !isEmpty && (
             <>
               {tvShows.map(({ show }) => {
                 return (
-                  <TvShow
-                    key={show.id}
-                    thumbnailSrc={show.image && show.image.medium}
-                    name={show.name}
-                    rating={show.rating && show.rating.average}
-                  />
+                  <Link href={`/slide/${show.id}`}>
+                    <div>
+                      <Result
+                        key={show.id}
+                        thumbnailSrc={show.image && show.image.medium}
+                        name={show.name}
+                      />
+                    </div>
+                  </Link>
                 );
               })}
             </>

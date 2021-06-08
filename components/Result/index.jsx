@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
-const TvShowContainer = styled.div`
+const ResultContainer = styled.div`
   width: 100%;
   height: 5rem;
   display: flex;
   border-bottom: 1px solid #d8d8d852;
   padding: 6px 8px;
   align-items: center;
+
+  &:hover {
+    background-color: #d8d8d852;
+    cursor: pointer;
+  }
 `;
 
 const Thumbnail = styled.div`
@@ -29,25 +34,17 @@ const Name = styled.h3`
   display: flex;
 `;
 
-const Rating = styled.span`
-  color: #a1a1a1;
-  font-size: 16px;
-  display: flex;
-  flex: 0.2;
-`;
-
-const TvShow = (props) => {
-  const { thumbnailSrc, name, rating } = props;
+const Result = (props) => {
+  const { thumbnailSrc, name } = props;
 
   return (
-    <TvShowContainer>
+    <ResultContainer>
       <Thumbnail>
         <img src={thumbnailSrc} />
       </Thumbnail>
       <Name>{name}</Name>
-      <Rating> {rating || "N/A"} </Rating>
-    </TvShowContainer>
+    </ResultContainer>
   );
 };
 
-export default TvShow;
+export default Result;
