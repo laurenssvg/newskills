@@ -1,6 +1,6 @@
 import Layout from "../../components/Layout/Layout";
 
-const Slide = (props) => {
+const Slide = () => {
   return <Layout>Hello</Layout>;
 };
 
