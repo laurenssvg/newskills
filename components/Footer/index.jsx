@@ -12,7 +12,7 @@ const FooterContainer = styled.div`
 `;
 
 const Footer = () => {
-  return <FooterContainer>NewSkills Practitioner 2021</FooterContainer>;
+  return <FooterContainer>NewSkills Practitioner 2021 </FooterContainer>;
 };
 
 export default Footer;

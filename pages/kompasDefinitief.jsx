@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styled from "styled-components";
 import Layout from "../components/Layout/Layout";
 
@@ -21,6 +20,7 @@ const Title = styled.h1`
 const KompasImg = styled.img`
   border-radius: 50%;
   width: 100%;
+  cursor: pointer;
 `;
 
 const List = styled.ul`
@@ -36,10 +36,10 @@ const KompasBottomLeft = styled.div``;
 const KompasBottomMid = styled.div``;
 const KompasBottomRight = styled.div``;
 
-const Kompas = () => {
+const KompasDefinitief = () => {
   return (
     <Layout>
-      <Title>Kompas</Title>
+      <Title>Definitieve Kompas</Title>
       <KompasContainer>
         <KompasTopLeft>
           <h3>True nature</h3>
@@ -47,6 +47,16 @@ const Kompas = () => {
             <li>Ruimdenkende, open-minded persoon.</li>
             <li>Sociaal en betrokken, als collega maar ook als vriend.</li>
             <li>Perfectionist</li>
+            <li>Soms een dromer (grote binnenwereld)</li>
+            <li>
+              Observerend (afwachtend van nature, neemt niet direct het
+              voortouw)
+            </li>
+            <li>Nauwkeurig</li>
+            <li>Rationeel </li>
+            <li>Behulpzaam </li>
+            <li>Respectvol</li>
+            <li>Een blauw-groene persoonlijkheid</li>
           </List>
         </KompasTopLeft>
         <KompasTopMid></KompasTopMid>
@@ -56,17 +66,19 @@ const Kompas = () => {
             Ik kan <b>gepassioneerd</b> en met kennis van zaken mijn standpunt
             overbrengen, waarbij ik in de communicatie inspeel op en rekening
             houd met de mensen om mij heen. Ik kan goed <b>luisteren</b> naar
-            anderen. Ik houd ook altijd overzicht op het <b>grotere plaatje</b>,
-            en verlies mezelf niet in details. Ik kan goed <b>analytisch</b>{" "}
-            denken en gedachtes omzetten in bruikbare code.
+            anderen. Ik kan de schakel vormen tussen techniek en klant, kan
+            techniek vertalen naar begrijpbare taal en vice versa. Ik kan{" "}
+            <b>anderen goed helpen</b>, dingen uitleggen en het hierdoor naar
+            hun zin maken. Ik houd ook altijd <b>overzicht</b> op het grotere
+            plaatje, en verlies mezelf niet in details. Ik kan goed{" "}
+            <b>analytisch</b> denken en gedachtes omzetten in bruikbare code. Ik
+            kan succesvol een <b>patroon doorbreken</b> door het stellen van
+            kleine doelen, om uiteindelijk een groter doel te bereiken. Hiermee
+            kan ik succesvol <b>verandering</b> bij mezelf bewerkstelligen.
           </div>
         </KompasTopRight>
         <KompasMidLeft></KompasMidLeft>
-        <Link href="/kompasDefinitief">
-          <a>
-            <KompasImg src="https://scx2.b-cdn.net/gfx/news/hires/2015/1-researchersf.jpg" />
-          </a>
-        </Link>
+        <KompasImg src="https://scx2.b-cdn.net/gfx/news/hires/2015/1-researchersf.jpg" />
         <KompasMidRight></KompasMidRight>
         <KompasBottomLeft>
           <h3>Most important principles, moral values</h3>
@@ -93,4 +105,4 @@ const Kompas = () => {
   );
 };
 
-export default Kompas;
+export default KompasDefinitief;

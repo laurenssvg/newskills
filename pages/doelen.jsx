@@ -35,7 +35,7 @@ const ListItem = styled.li`
     cursor: pointer;
     border: 1px solid black;
     padding: 10px;
-    background: #dddddd;
+    background: #f1f1f1;
   }
 `;
 
@@ -43,7 +43,7 @@ const Doelen = () => {
   return (
     <Layout>
       <DoelenContainer>
-        <Title>Doelen</Title>
+        <Title>Persoonlijke ontwikkeldoelen</Title>
         <List>
           <ListItem>
             Zichtbaarder zijn in communicatie, bijvoorbeeld in vergaderingen.
