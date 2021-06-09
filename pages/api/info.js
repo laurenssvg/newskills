@@ -1,10 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 export default (req, res) => {
-  const { slug } = req.query;
-
-  console.log(slug);
-
   res.status(200).json([
     {
       id: 1,
@@ -15,17 +11,17 @@ export default (req, res) => {
     },
     {
       id: 2,
-      name: "2. Kompas",
-      slug: "kompas",
-      image:
-        "https://deinterieurstickerzaak.nl/wp-content/uploads/2018/06/Kompas-zwart.png",
-    },
-    {
-      id: 3,
-      name: "3. Doelen",
+      name: "2. Doelen",
       slug: "doelen",
       image:
         "https://dyllifedesign.nl/wp-content/uploads/2018/12/Goals-step-by-step.jpg",
+    },
+    {
+      id: 3,
+      name: "3. Kompas",
+      slug: "kompas",
+      image:
+        "https://deinterieurstickerzaak.nl/wp-content/uploads/2018/06/Kompas-zwart.png",
     },
     {
       id: 4,

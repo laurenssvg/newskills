@@ -17,7 +17,7 @@ const Introductie = () => {
   return (
     <Layout>
       <IntroductieContainer>
-        <Title>Introductie</Title>
+        <Title>1. Introductie</Title>
       </IntroductieContainer>
     </Layout>
   );

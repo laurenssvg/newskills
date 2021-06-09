@@ -148,7 +148,7 @@ const SearchBar = (props) => {
     if (isClickedOutside) collapseContainer();
   }, [isClickedOutside]);
 
-  const prepareSearchQuery = (query) => {
+  const prepareSearchQuery = () => {
     const url = `api/info`;
 
     return encodeURI(url);
@@ -159,7 +159,7 @@ const SearchBar = (props) => {
 
     setLoading(true);
 
-    const URL = prepareSearchQuery(searchQuery);
+    const URL = prepareSearchQuery();
 
     const response = await axios.get(URL).catch((err) => {
       console.log(err);
@@ -190,6 +190,7 @@ const SearchBar = (props) => {
           ref={inputRef}
           value={searchQuery}
           onChange={onChangeHandler}
+          onSelect={onChangeHandler}
         ></SearchInput>
         <AnimatePresence>
           {isExpanded && (
