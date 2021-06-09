@@ -223,9 +223,9 @@ const SearchBar = (props) => {
             <>
               {slides.map(({ name, id, image, slug }) => {
                 return (
-                  <Link href={`/slide/${slug}`}>
+                  <Link key={id} href={`/${slug}`}>
                     <div>
-                      <Result key={id} thumbnailSrc={image} name={name} />
+                      <Result thumbnailSrc={image} name={name} />
                     </div>
                   </Link>
                 );
