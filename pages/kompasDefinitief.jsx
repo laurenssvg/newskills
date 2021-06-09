@@ -63,8 +63,8 @@ const KompasDefinitief = () => {
             Ik kan <b>gepassioneerd</b> en met kennis van zaken mijn standpunt
             overbrengen, waarbij ik in de communicatie inspeel op en rekening
             houd met de mensen om mij heen. Ik kan goed <b>luisteren</b> naar
-            anderen. Ik kan de schakel vormen tussen techniek en klant, kan
-            techniek vertalen naar begrijpbare taal en vice versa. Ik kan{" "}
+            anderen. Ik kan de <b>schakel vormen</b> tussen techniek en klant,
+            kan techniek vertalen naar begrijpbare taal en vice versa. Ik kan{" "}
             <b>anderen goed helpen</b>, dingen uitleggen en het hierdoor naar
             hun zin maken. Ik houd ook altijd <b>overzicht</b> op het grotere
             plaatje, en verlies mezelf niet in details. Ik kan goed{" "}
