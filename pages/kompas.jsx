@@ -6,8 +6,8 @@ const KompasContainer = styled.div`
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: auto 15vw auto;
-  grid-template-columns: auto 20vh auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 2fr;
   justify-content: center;
   padding: 0 20px;
   text-align: center;

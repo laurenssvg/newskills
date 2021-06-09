@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Layout from "../components/Layout/Layout";
 
-const ConclusieContainer = styled.div`
+const AfsluitingContainer = styled.div`
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -20,14 +20,14 @@ const List = styled.ul`
   flex-direction: column;
 `;
 
-const Conclusie = () => {
+const Afsluiting = () => {
   return (
     <Layout>
-      <ConclusieContainer>
-        <Title>Conclusie</Title>
-      </ConclusieContainer>
+      <AfsluitingContainer>
+        <Title>Bedankt voor het luisteren!</Title>
+      </AfsluitingContainer>
     </Layout>
   );
 };
 
-export default Conclusie;
+export default Afsluiting;

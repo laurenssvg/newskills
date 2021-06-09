@@ -32,8 +32,8 @@ export default (req, res) => {
     },
     {
       id: 5,
-      name: "5. Conclusie",
-      slug: "conclusie",
+      name: "5. Afsluiting",
+      slug: "afsluiting",
       image:
         "http://www.educatie21.nl/wp-content/uploads/2017/05/conclusion.jpg",
     },

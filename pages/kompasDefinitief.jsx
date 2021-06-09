@@ -5,7 +5,7 @@ const KompasContainer = styled.div`
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: auto 15vw auto;
+  grid-template-rows: 2fr 1fr 1fr;
   grid-template-columns: auto 20vh auto;
   justify-content: center;
   padding: 0 20px;
@@ -48,10 +48,7 @@ const KompasDefinitief = () => {
             <li>Sociaal en betrokken, als collega maar ook als vriend.</li>
             <li>Perfectionist</li>
             <li>Soms een dromer (grote binnenwereld)</li>
-            <li>
-              Observerend (afwachtend van nature, neemt niet direct het
-              voortouw)
-            </li>
+            <li>Observerend</li>
             <li>Nauwkeurig</li>
             <li>Rationeel </li>
             <li>Behulpzaam </li>
