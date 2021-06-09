@@ -28,7 +28,7 @@ export default (req, res) => {
       name: "4. Resultaten",
       slug: "resultaten",
       image:
-        "https://lh3.googleusercontent.com/proxy/XjZsnGu8IxJ56fxRPqBp5FlLD4Gw0WOeCl9fcFGmlgZud_fBynE9bmsEnZXFWmQWT6eYtE9VNdRP6qMrHBucDJjARkEs2DExP_ArZizJeAp5QBwudXo7TpSYD3j3ZpW6OTJm-vTe5g",
+        "https://media.istockphoto.com/vectors/stage-curtains-vector-id479280419?k=6&m=479280419&s=170667a&w=0&h=xiXuBBHa42uqcelAEA09MDC7NRvbXXEooaKlnQhplAc=",
     },
     {
       id: 5,

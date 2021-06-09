@@ -18,10 +18,10 @@ const Thumbnail = styled.div`
   width: auto;
   height: 100%;
   display: flex;
-  flex: 0.4;
+  flex: 0.3;
 
   img {
-    width: auto;
+    width: 80%;
     height: 100%;
   }
 `;
